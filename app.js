@@ -1,8 +1,19 @@
+// const mongoose = require ('mongoose');
+// const DB_HOST = 'mongodb+srv://Viktoriia:zv159357zv@cluster0.mkg2dn1.mongodb.net/db-contacts?retryWrites=true&w=majority'
+// mongoose.connect(DB_HOST)
+// .then(()=> console.log('Database cinnect success'))
+// .catch(error => console.log(error.message))
+
+
+
+
+
 const express = require("express");
 const logger = require("morgan");
 const cors = require("cors");
-
+require("dotenv").config();
 const contactsRouter = require("./routes/api/contacts");
+
 
 const app = express();
 
